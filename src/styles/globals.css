@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light mode — Build-A-Biz blue/gold */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Primary = Build-A-Biz blue */
+    --primary: 217 84% 32%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary = Build-A-Biz gold */
+    --secondary: 44 95% 53%;
+    --secondary-foreground: 222 47% 11%;
+
+    --tertiary: 217 60% 96%;
+    --tertiary-foreground: 217 84% 22%;
+
+    --subtle: 220 14% 96%;
+    --subtle-foreground: 222 47% 18%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 215 14% 42%;
+
+    --accent: 220 14% 94%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 78% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 217 84% 35%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 222 47% 8%;
+    --foreground: 210 40% 99%;
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 99%;
+    --primary: 44 95% 53%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 217 84% 45%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 217 30% 16%;
+    --muted-foreground: 215 20% 70%;
+    --border: 217 25% 22%;
+    --input: 217 25% 22%;
+  }
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif !important;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+::selection {
+  background-color: hsl(217 84% 35% / 0.18);
+  color: hsl(var(--foreground));
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(217 14% 84%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Lenis smooth scroll */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
