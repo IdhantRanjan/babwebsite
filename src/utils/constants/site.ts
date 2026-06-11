@@ -1,10 +1,10 @@
 export const APP_NAME = "Build-A-Biz";
 
-export const APP_DOMAIN = "https://buildabiz.net";
+export const APP_DOMAIN = "https://buildabiz.org";
 
 export const APP_HOSTNAMES = new Set([
-    "buildabiz.net",
-    "www.buildabiz.net",
+    "buildabiz.org",
+    "www.buildabiz.org",
 ]);
 
 export const APP_TAGLINE = "Empowering the next generation of entrepreneurs and investors.";
