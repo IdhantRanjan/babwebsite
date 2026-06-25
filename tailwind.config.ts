@@ -85,12 +85,12 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        "heading": ["var(--font-aeonik)"],
+        "heading": ["var(--font-grotesk)"],
         "default": ["var(--font-inter)"],
         /* NewForm editorial families.
-           twk = TWK Everett in the source design; we ship Aeonik Pro, a
-           neo-grotesque that matches it far better than Inter did. */
-        "twk": ["var(--font-aeonik)", "var(--font-inter)", "ui-sans-serif", "system-ui", "sans-serif"],
+           twk = TWK Everett in the source design; we use Manrope, a free
+           geometric grotesque that matches it well (Aeonik is proprietary). */
+        "twk": ["var(--font-grotesk)", "var(--font-inter)", "ui-sans-serif", "system-ui", "sans-serif"],
         "editorial": ["var(--font-editorial-new)", "Georgia", "serif"],
         "mondwest": ["var(--font-pp-mondwest)", "Georgia", "serif"],
       },

@@ -20,7 +20,7 @@ import {
 } from "./constants/misc";
 export type { ProgramArchive } from "./constants/misc";
 import { NAV_LINKS } from "./constants/nav-links";
-import { aeonik, inter, editorialNew, mondwest } from "./constants/fonts";
+import { grotesk, inter, editorialNew, mondwest } from "./constants/fonts";
 
 // functions
 import { cn } from "./functions/cn";
@@ -59,7 +59,7 @@ export {
     // nav
     NAV_LINKS,
     // fonts
-    aeonik,
+    grotesk,
     inter,
     editorialNew,
     mondwest,

@@ -1,5 +1,4 @@
-import { Inter, DM_Sans, Cormorant, Playfair_Display } from "next/font/google";
-import localFont from "next/font/local";
+import { Inter, Manrope, Cormorant, Playfair_Display } from "next/font/google";
 
 /* NewForm editorial overhaul — display serif substitutes.
    Editorial New  -> Cormorant (thin, literary serif at weight 300)
@@ -18,30 +17,13 @@ export const mondwest = Playfair_Display({
     display: "swap",
 });
 
-export const aeonik = localFont({
-    src: [
-        {
-            path: "../../../public/fonts/AeonikPro-Light.woff2",
-            weight: "300",
-        },
-        {
-            path: "../../../public/fonts/AeonikPro-Regular.woff2",
-            weight: "400",
-        },
-        {
-            path: "../../../public/fonts/AeonikPro-Medium.woff2",
-            weight: "500",
-        },
-        {
-            path: "../../../public/fonts/AeonikPro-Bold.woff2",
-            weight: "700",
-        },
-        {
-            path: "../../../public/fonts/AeonikPro-Black.woff2",
-            weight: "900",
-        }
-    ],
-    variable: "--font-aeonik",
+/* Body / UI grotesque. Aeonik Pro is proprietary, so we use Manrope —
+   a free, OFL-licensed geometric grotesque with very similar proportions. */
+export const grotesk = Manrope({
+    subsets: ["latin"],
+    weight: ["300", "400", "500", "600", "700"],
+    variable: "--font-grotesk",
+    display: "swap",
 });
 
 export const inter = Inter({
