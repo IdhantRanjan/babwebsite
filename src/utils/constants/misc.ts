@@ -119,7 +119,7 @@ export const PARTNER_LOGOS = [
 
 /* ---------- Impact stats ---------- */
 export const STATS = [
-    { value: "2000+", label: "Students Impacted" },
+    { value: "8000+", label: "Students Impacted" },
     { value: "20+", label: "Communities Served" },
     { value: "$5K", label: "Funding This Year" },
     { value: "100%", label: "Free for Students" },
